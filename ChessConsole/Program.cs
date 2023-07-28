@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChessConsole.tabuleiro;
+using System;
 
 namespace ChessConsole // Note: actual namespace depends on the project name.
 {
@@ -6,7 +7,9 @@ namespace ChessConsole // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Tabuleiro tab = new Tabuleiro(8, 8);
+
+            Tela.ImprimirTabuleiro(tab);
         }
     }
 }
